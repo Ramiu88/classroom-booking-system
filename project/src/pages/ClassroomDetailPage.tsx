@@ -17,7 +17,6 @@ import {
 } from 'lucide-react';
 import { format } from 'date-fns';
 
-// Mock classroom data
 const classroomsData = {
   1: {
     id: 1,
@@ -36,9 +35,9 @@ const classroomsData = {
       accessibility: 'Wheelchair Access, Hearing Loop'
     },
     images: [
-      'https://images.pexels.com/photos/267507/pexels-photo-267507.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
-      'https://images.pexels.com/photos/2041627/pexels-photo-2041627.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
-      'https://images.pexels.com/photos/256541/pexels-photo-256541.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'
+      'https://images.pexels.com/photos/207691/pexels-photo-207691.jpeg',
+      'https://images.pexels.com/photos/289737/pexels-photo-289737.jpeg',
+      'https://images.pexels.com/photos/260689/pexels-photo-260689.jpeg'
     ],
     availability: {
       '2025-02-15': ['9:00', '10:00', '11:00', '13:00', '14:00', '15:00'],
@@ -67,9 +66,9 @@ const classroomsData = {
       accessibility: 'Wheelchair Access'
     },
     images: [
-      'https://images.pexels.com/photos/2041627/pexels-photo-2041627.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
-      'https://images.pexels.com/photos/267507/pexels-photo-267507.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
-      'https://images.pexels.com/photos/1181316/pexels-photo-1181316.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'
+      'https://images.pexels.com/photos/289737/pexels-photo-289737.jpeg',
+      'https://images.pexels.com/photos/207691/pexels-photo-207691.jpeg',
+      'https://images.pexels.com/photos/373488/pexels-photo-373488.jpeg'
     ],
     availability: {
       '2025-02-15': ['9:00', '10:00', '11:00', '13:00', '14:00'],
@@ -98,9 +97,9 @@ const classroomsData = {
       accessibility: 'Adjustable Height Desks'
     },
     images: [
-      'https://images.pexels.com/photos/1181248/pexels-photo-1181248.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
-      'https://images.pexels.com/photos/267507/pexels-photo-267507.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
-      'https://images.pexels.com/photos/2041627/pexels-photo-2041627.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'
+      'https://images.pexels.com/photos/373488/pexels-photo-373488.jpeg',
+      'https://images.pexels.com/photos/289737/pexels-photo-289737.jpeg',
+      'https://images.pexels.com/photos/207691/pexels-photo-207691.jpeg'
     ],
     availability: {
       '2025-02-15': ['9:00', '13:00', '14:00', '15:00'],

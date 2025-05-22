@@ -11,7 +11,7 @@ const classroomsData = [
     location: 'North Campus',
     capacity: 120,
     features: ['Projector', 'Microphone', 'Computer'],
-    image: 'https://images.pexels.com/photos/267507/pexels-photo-267507.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'
+    image: 'https://images.pexels.com/photos/207691/pexels-photo-207691.jpeg'
   },
   {
     id: 2,
@@ -20,7 +20,7 @@ const classroomsData = [
     location: 'West Campus',
     capacity: 30,
     features: ['Whiteboard', 'Computer', 'Conferencing'],
-    image: 'https://images.pexels.com/photos/2041627/pexels-photo-2041627.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'
+    image: 'https://images.pexels.com/photos/289737/pexels-photo-289737.jpeg'
   },
   {
     id: 3,
@@ -29,7 +29,7 @@ const classroomsData = [
     location: 'East Campus',
     capacity: 45,
     features: ['30 Computers', 'Projector', 'Printer'],
-    image: 'https://images.pexels.com/photos/1181248/pexels-photo-1181248.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'
+    image: 'https://images.pexels.com/photos/373488/pexels-photo-373488.jpeg'
   },
   {
     id: 4,
@@ -38,7 +38,7 @@ const classroomsData = [
     location: 'Central Campus',
     capacity: 20,
     features: ['Smart Board', 'Video Conferencing', 'Whiteboard'],
-    image: 'https://images.pexels.com/photos/1181316/pexels-photo-1181316.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'
+    image: 'https://images.pexels.com/photos/260689/pexels-photo-260689.jpeg'
   },
   {
     id: 5,
@@ -47,7 +47,7 @@ const classroomsData = [
     location: 'South Campus',
     capacity: 200,
     features: ['Stage', 'Sound System', 'Projector', 'Lighting'],
-    image: 'https://images.pexels.com/photos/5058747/pexels-photo-5058747.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'
+    image: 'https://images.pexels.com/photos/236730/pexels-photo-236730.jpeg'
   },
   {
     id: 6,
@@ -56,7 +56,7 @@ const classroomsData = [
     location: 'Central Campus',
     capacity: 8,
     features: ['Whiteboard', 'Table & Chairs'],
-    image: 'https://images.pexels.com/photos/256541/pexels-photo-256541.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'
+    image: 'https://images.pexels.com/photos/256520/pexels-photo-256520.jpeg'
   }
 ];
 
