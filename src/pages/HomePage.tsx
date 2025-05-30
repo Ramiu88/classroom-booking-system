@@ -10,7 +10,7 @@ const featuredClassrooms = [
     building: 'Science Building',
     capacity: 120,
     features: ['Projector', 'Microphone', 'Computer'],
-    image: 'https://images.pexels.com/photos/207691/pexels-photo-207691.jpeg'
+    image: 'https://images.pexels.com/photos/267507/pexels-photo-267507.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'
   },
   {
     id: 2,
@@ -18,7 +18,7 @@ const featuredClassrooms = [
     building: 'Liberal Arts',
     capacity: 30,
     features: ['Whiteboard', 'Computer', 'Conferencing'],
-    image: 'https://images.pexels.com/photos/289737/pexels-photo-289737.jpeg'
+    image: 'https://images.pexels.com/photos/2041627/pexels-photo-2041627.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'
   },
   {
     id: 3,
@@ -26,7 +26,7 @@ const featuredClassrooms = [
     building: 'Technology Center',
     capacity: 45,
     features: ['30 Computers', 'Projector', 'Printer'],
-    image: 'https://images.pexels.com/photos/373488/pexels-photo-373488.jpeg'
+    image: 'https://images.pexels.com/photos/1181248/pexels-photo-1181248.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'
   }
 ];
 
@@ -37,8 +37,8 @@ const HomePage: React.FC = () => {
       <section className="relative rounded-xl overflow-hidden mb-12">
         <div className="absolute inset-0 bg-gradient-to-r from-primary-900/80 to-primary-700/70 z-10"></div>
         <img 
-          src="https://images.pexels.com/photos/207691/pexels-photo-207691.jpeg"
-          alt="Modern university lecture hall"
+          src="https://images.pexels.com/photos/356065/pexels-photo-356065.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+          alt="University campus classroom"
           className="absolute inset-0 w-full h-full object-cover object-center"
         />
         <div className="relative z-20 py-20 px-6 md:py-24 md:px-12 text-white">

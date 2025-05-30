@@ -1,0 +1,91 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id            String    @id @default(uuid())
+  email         String    @unique
+  name          String
+  password      String
+  role          Role      @default(USER)
+  bookings      Booking[]
+  notifications Notification[]
+  createdAt     DateTime  @default(now())
+  updatedAt     DateTime  @updatedAt
+}
+
+model Room {
+  id          String    @id @default(uuid())
+  name        String
+  building    String
+  location    String
+  capacity    Int
+  features    String[]
+  image       String?
+  bookings    Booking[]
+  createdAt   DateTime  @default(now())
+  updatedAt   DateTime  @updatedAt
+}
+
+model Booking {
+  id          String    @id @default(uuid())
+  startTime   DateTime
+  endTime     DateTime
+  purpose     String
+  attendees   Int
+  status      BookingStatus @default(PENDING)
+  userId      String
+  roomId      String
+  user        User      @relation(fields: [userId], references: [id])
+  room        Room      @relation(fields: [roomId], references: [id])
+  notifications Notification[]
+  createdAt   DateTime  @default(now())
+  updatedAt   DateTime  @updatedAt
+
+  @@index([startTime, endTime])
+  @@index([roomId])
+  @@index([userId])
+}
+
+model Notification {
+  id          String    @id @default(uuid())
+  type        NotificationType
+  message     String
+  status      NotificationStatus @default(PENDING)
+  userId      String
+  bookingId   String?
+  user        User      @relation(fields: [userId], references: [id])
+  booking     Booking?  @relation(fields: [bookingId], references: [id])
+  createdAt   DateTime  @default(now())
+  updatedAt   DateTime  @updatedAt
+}
+
+enum Role {
+  USER
+  ADMIN
+}
+
+enum BookingStatus {
+  PENDING
+  CONFIRMED
+  CANCELLED
+  COMPLETED
+}
+
+enum NotificationType {
+  SMS
+  EMAIL
+  TELEGRAM
+  WHATSAPP
+}
+
+enum NotificationStatus {
+  PENDING
+  SENT
+  FAILED
+}
